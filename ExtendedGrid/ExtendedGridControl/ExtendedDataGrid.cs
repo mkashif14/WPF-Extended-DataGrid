@@ -845,7 +845,8 @@ namespace ExtendedGrid.ExtendedGridControl
                 var formattedText = new FormattedText((e.Row.GetIndex() + 1).ToString(CultureInfo.InvariantCulture),
                                                       CultureInfo.GetCultureInfo("en-us"),
                                                       FlowDirection.LeftToRight,
-                                                      new Typeface("Arial"), FontSize = 9, Brushes.Black);
+                                                      new Typeface("Arial"), FontSize = 9, Brushes.Black,
+                                                      VisualTreeHelper.GetDpi(this).PixelsPerDip);
                 double textWidth = formattedText.Width*72/96;
                 if (textWidth > RowHeaderActualWidth && textWidth > 17)
                 {

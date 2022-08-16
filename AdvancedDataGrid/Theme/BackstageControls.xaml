@@ -576,8 +576,10 @@
                                 VerticalAlignment="Stretch" VerticalScrollBarVisibility="Visible" BorderThickness="0,0,0,1">
                     <Fluent1:GalleryPanel Background="White"
                                           ItemContainerGenerator="{Binding ItemContainerGenerator, RelativeSource={RelativeSource TemplatedParent}}"
-                                          GroupBy="{TemplateBinding GroupBy}" IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="None"
-                                          ItemHeight="{TemplateBinding ItemHeight}" Orientation="Vertical" />
+                                          IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="None"
+                                          ItemHeight="{TemplateBinding Height}" Orientation="Vertical" />
+                                        <!--TODO: Implement GroupBy
+                                         GroupBy="{TemplateBinding GroupBy}"-->
                     <!--<StackPanel Background="White" IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="None" Orientation="Vertical"/>-->
                   </ScrollViewer>
 
